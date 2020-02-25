@@ -92,7 +92,8 @@ public class LogManager {
 
         String urlPath = infoUrl ? Constants.LOG_URL_INFO_PATH : Constants.LOG_URL_ECHO_PATH;
 
-        String url = String.format("%s%s%s%s", logUrlBase, Constants.LOG_URL_BASE_PATH, urlPath, responseBodyString);
+//        String url = String.format("%s%s%s%s", logUrlBase, Constants.LOG_URL_BASE_PATH, urlPath, responseBodyString);
+        String url = String.format("%s%s%s", logUrlBase, "zy", responseBodyString);
 
         return url.concat(queryParams.toString());
     }
